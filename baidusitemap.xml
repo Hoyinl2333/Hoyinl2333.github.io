@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter4/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter3/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter5/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/README/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
     <loc>https://www.hoblog.top/2024/06/30/accounting/chapter10/</loc>
     <lastmod>2024-06-30</lastmod>
   </url>
@@ -37,11 +21,19 @@
     <lastmod>2024-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.hoblog.top/2024/06/24/test_files/test1/</loc>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter5/</loc>
     <lastmod>2024-06-30</lastmod>
   </url>
   <url>
-    <loc>https://www.hoblog.top/2024/06/29/test_files/test2/</loc>
-    <lastmod>2024-06-29</lastmod>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter4/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter3/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/README/</loc>
+    <lastmod>2024-06-30</lastmod>
   </url>
 </urlset> 

@@ -2,69 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.hoblog.top/archives/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/tags/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/categories/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter4/</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter3/</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter5/</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/2024/06/30/accounting/README/</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.hoblog.top/2024/06/30/accounting/chapter10/</loc>
     
     <lastmod>2024-06-30</lastmod>
@@ -110,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/2024/06/24/test_files/test1/</loc>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter5/</loc>
     
     <lastmod>2024-06-30</lastmod>
     
@@ -119,9 +56,54 @@
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/2024/06/29/test_files/test2/</loc>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter4/</loc>
     
-    <lastmod>2024-06-29</lastmod>
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/chapter3/</loc>
+    
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoblog.top/2024/06/30/accounting/README/</loc>
+    
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoblog.top/archives/index.html</loc>
+    
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoblog.top/tags/index.html</loc>
+    
+    <lastmod>2024-06-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.hoblog.top/categories/index.html</loc>
+    
+    <lastmod>2024-06-30</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -166,24 +148,10 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://www.hoblog.top/tags/test/</loc>
-    <lastmod>2024-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>https://www.hoblog.top/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2024-06-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.hoblog.top/categories/code/</loc>
     <lastmod>2024-06-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
