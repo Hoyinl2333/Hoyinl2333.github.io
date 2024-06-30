@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://example.com/2024/06/30/accounting/chapter4/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/06/30/accounting/chapter3/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/06/30/accounting/chapter5/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com/2024/06/30/accounting/README/</loc>
+    <lastmod>2024-06-30</lastmod>
+  </url>
+  <url>
     <loc>http://example.com/2024/06/30/accounting/chapter10/</loc>
     <lastmod>2024-06-30</lastmod>
   </url>
@@ -18,22 +34,6 @@
   </url>
   <url>
     <loc>http://example.com/2024/06/30/accounting/chapter6/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/06/30/accounting/chapter5/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/06/30/accounting/chapter4/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/06/30/accounting/chapter3/</loc>
-    <lastmod>2024-06-30</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com/2024/06/30/accounting/README/</loc>
     <lastmod>2024-06-30</lastmod>
   </url>
   <url>
