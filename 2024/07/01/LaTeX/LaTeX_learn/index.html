@@ -1,0 +1,518 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LaTeX 学习心得 | Hoyinl's Blog</title><meta name="author" content="Hoyinl"><meta name="copyright" content="Hoyinl"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="LaTeX 学习心得">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LaTeX 学习心得">
+<meta property="og:url" content="https://www.hoblog.top/2024/07/01/LaTeX/LaTeX_learn/index.html">
+<meta property="og:site_name" content="Hoyinl&#39;s Blog">
+<meta property="og:description" content="LaTeX 学习心得">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://www.hoblog.top/images/PID_48285353.jpg">
+<meta property="article:published_time" content="2024-06-30T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-07-01T18:45:55.047Z">
+<meta property="article:author" content="Hoyinl">
+<meta property="article:tag" content="LaTex">
+<meta property="article:tag" content="学习笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.hoblog.top/images/PID_48285353.jpg"><link rel="shortcut icon" href="/images/icon.png"><link rel="canonical" href="https://www.hoblog.top/2024/07/01/LaTeX/LaTeX_learn/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":300},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"limitCount":100,"languages":{"author":"Author: Hoyinl","link":"Link: ","source":"Source: Hoyinl's Blog","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source."}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"You have switched to Traditional Chinese","cht_to_chs":"You have switched to Simplified Chinese","day_to_night":"You have switched to Dark Mode","night_to_day":"You have switched to Light Mode","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-right"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LaTeX 学习心得',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-02 02:45:55'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/style.css"><meta name="generator" content="Hexo 7.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Catogories</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/"><i class="fa-fw fa-solid fa-cash-register"></i><span> 会计学原理</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img fixed" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hoyinl's Blog"><span class="site-name">Hoyinl's Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> Catogories</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/"><i class="fa-fw fa-solid fa-cash-register"></i><span> 会计学原理</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">LaTeX 学习心得</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-06-30T16:00:00.000Z" title="Created 2024-07-01 00:00:00">2024-07-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-07-01T18:45:55.047Z" title="Updated 2024-07-02 02:45:55">2024-07-02</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/LaTeX/">LaTeX</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">3.4k</span></span></div></div></div><article class="post-content" id="article-container"><hr>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/PID_48285353.jpg " alt="PID：48285353" /> 
+<h2 id="起因">起因</h2>
+<p>最近要准备数模国赛了，因此学习一下LaTeX的写作排版。</p>
+<h2 id="配置有关环境">配置有关环境</h2>
+<p>VScode集成了非常功能，心想着应该也有Latex插件，在一番参考网上教程后，下载了<code>LaTex Workshop</code>插件。</p>
+<p>之后在VScode中，打开一个准备好的空文件夹，创建一个<code>my_latex.tex</code>文件，就可以在VScode中进行LaTex的写作了。</p>
+<p>在写作的同时，也可以随时在VScode中预览效果。</p>
+<p>如果你想在线编辑LaTeX，也可以使用<a target="_blank" rel="noopener" href="https://www.overleaf.com/">Overleaf</a>。</p>
+<h2 id="学习过程">学习过程</h2>
+<h3 id="基本语法规则">基本语法规则</h3>
+<p>LaTex中，注释以<code>%</code>开头</p>
+<p>LaTeX语言的写法大致分为两类</p>
+<ul>
+<li>
+<p>命令</p>
+<p>以<code>\</code>开头，后面跟命令名，如<code>\documentclass</code></p>
+</li>
+<li>
+<p>环境</p>
+<p>以<code>\begin</code>开头，以<code>\end</code>结尾，如<code>\begin&#123;document&#125;</code></p>
+</li>
+</ul>
+<blockquote>
+<p>命令和环境可以嵌套</p>
+</blockquote>
+<p>空格和换行符在LaTex中会被忽略，因此需要专门的空格和换行符。</p>
+<ul>
+<li>空格：一般采用<code>\quad</code>或<code>\qquad</code></li>
+<li>换行符：<code>\\</code></li>
+</ul>
+<p>分段只需要相邻两段之间空一行即可,分段会自动缩进</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line">this is paragraph1, you can see that there is a space between paragraph1 and paragraph2.</span><br><span class="line"></span><br><span class="line">this is paragraph2.</span><br></pre></td></tr></table></figure>
+<h3 id="开始一个pdf文档的写作">开始一个pdf文档的写作</h3>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;classname&#125;</span><br></pre></td></tr></table></figure>
+<p>classname 代表文章的风格，可选参数有：</p>
+<ul>
+<li>
+<p><code>article</code>: 用于写短文章</p>
+</li>
+<li>
+<p><code>report</code>: 用于写长文章</p>
+</li>
+<li>
+<p><code>book</code>: 用于写书</p>
+</li>
+<li>
+<p><code>letter</code>: 用于写信件</p>
+</li>
+</ul>
+<p>如果要在文中使用中文，在头部加上xeLaTeX编译（这里我也有点没搞懂）</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="meta">%!TEX program = xelatex  %采用xelatex编译</span></span><br></pre></td></tr></table></figure>
+<h3 id="相关包安装">相关包安装</h3>
+<p>在开始文档后，需要安装一些包</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;package1,package2,...&#125;</span><br></pre></td></tr></table></figure>
+<p>常用的包包括：</p>
+<ul>
+<li><code>xeCJK</code>: 用于在xelatex中使用中文。</li>
+<li><code>amsmath</code>,<code>amsfonts</code>,<code>amsthm</code>：数学相关支持包，提供了许多数学函数和符号。</li>
+<li><code>bm</code>: 用于在公式中使用黑斜体字体。</li>
+<li><code>mathrsfs</code>: 用于在公式中使用斜体字体。</li>
+<li><code>graphicx</code>: 用于插入图片。</li>
+<li><code>subfigure</code>: 用于在同一张图中插入多个子图。</li>
+<li><code>geometry</code>: 用于设置页面布局。</li>
+<li><code>fancyhdr</code>: 用于自定义页眉和页脚。</li>
+<li><code>lastpage</code>: 用于获取总页数。</li>
+<li><code>listings</code>: 用于插入代码。</li>
+<li><code>hyperref</code>: 用于生成目录和链接。</li>
+</ul>
+<h3 id="导言区">导言区</h3>
+<p>Latex将文章分为导言区（preamble）和正文区（main matter）。</p>
+<p>导言区可以放置一些全局的设置，如页眉页脚、字体、标题等。</p>
+<h3 id="设置文章格式">设置文章格式</h3>
+<p>设置页面边距</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\geometry</span>&#123;left=2cm,right=2cm,top=2cm,bottom=2cm&#125;</span><br></pre></td></tr></table></figure>
+<p>设置页眉和页脚</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\pagestyle</span>&#123;fancy&#125;</span><br><span class="line"><span class="keyword">\fancyhf</span>&#123;&#125; <span class="comment">%清除默认页眉和页脚</span></span><br><span class="line"><span class="keyword">\fancyhead</span>[L]&#123;左页眉&#125; <span class="comment">% 可以写成\lhead&#123;左页眉&#125;</span></span><br><span class="line"><span class="keyword">\fancyhead</span>[C]&#123;中页眉&#125; <span class="comment">% 可以写成\chead&#123;中页眉&#125;</span></span><br><span class="line"><span class="keyword">\fancyhead</span>[R]&#123;右页眉&#125; <span class="comment">% 可以写成\rhead&#123;右页眉&#125;</span></span><br><span class="line"><span class="keyword">\fancyfoot</span>[L]&#123;左页脚&#125; <span class="comment">% 可以写成\lfoot&#123;左页脚&#125;</span></span><br><span class="line"><span class="keyword">\fancyfoot</span>[C]&#123;中页脚&#125; <span class="comment">% 可以写成\cfoot&#123;中页脚&#125;</span></span><br><span class="line"><span class="keyword">\fancyfoot</span>[R]&#123;右页脚&#125; <span class="comment">% 可以在\rfoot&#123;右页脚&#125;</span></span><br></pre></td></tr></table></figure>
+<p>设置底部页码（默认是1、2…数字）</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\cfoot</span>&#123;第 <span class="keyword">\thepage</span> 页（共 <span class="keyword">\lastpage</span> 页）&#125; </span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>\thepage 和 \lastpage 是内置的宏</p>
+</blockquote>
+<h3 id="设置标题格式">设置标题格式</h3>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\title</span>&#123;文章标题&#125;</span><br><span class="line"><span class="keyword">\author</span>&#123;作者姓名&#125;</span><br><span class="line"><span class="keyword">\date</span>&#123;日期&#125; <span class="comment">% 2024-07-01 % \today</span></span><br></pre></td></tr></table></figure>
+<h3 id="编写正文区">编写正文区</h3>
+<p>正文区以<code>\begin&#123;document&#125;</code>开始，以<code>\end&#123;document&#125;</code>结束。</p>
+<p>如果你想显示各个设定好的标题，可以加入如下代码：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\maketitle</span></span><br></pre></td></tr></table></figure>
+<p>如果你需要一些无意义的填充，可以加入如下代码：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\lipsum</span>[1-5] <span class="comment">% 参数1-5表示填充5段无意义的文本</span></span><br></pre></td></tr></table></figure>
+<p>以下内容均均属正文内容：</p>
+<h3 id="目录">目录</h3>
+<p>如果你想显示目录，可以加入如下代码：</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\tableofcontents</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>目录是根据文章的各级标题自动生成的</p>
+</blockquote>
+<h3 id="各级标题">各级标题</h3>
+<p>通过<code>\section&#123;&#125;</code>,<code>\subsection&#123;&#125;</code>,<code>\subsubsection*&#123;&#125;</code>,你可以分别设置一级二级三级标题。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\section</span>&#123;一级标题&#125; <span class="comment">% 1 一级标题</span></span><br><span class="line"><span class="keyword">\subsection</span>&#123;二级标题&#125; <span class="comment">% 1.1 二级标题</span></span><br><span class="line"><span class="keyword">\subsubsection</span>&#123;三级标题&#125; <span class="comment">% 1.1.1 三级标题</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>如果不想有前缀数字，可以使用 <code>\section*&#123;&#125;</code>,<code>\subsection*&#123;&#125;</code>,<code>\subsubsection*&#123;&#125;</code></p>
+</blockquote>
+<h3 id="字体">字体</h3>
+<p>LaTex中，字体可以分为粗体、斜体、无衬线字体、打字机字体、小型大写字母、中等大写字母。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\textbf</span>&#123;粗体&#125; <span class="comment">% 加粗</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\textit</span>&#123;斜体&#125; <span class="comment">% 斜体</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\textsf</span>&#123;无衬线字体&#125; <span class="comment">% 无衬线字体</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\texttt</span>&#123;打字机字体&#125; <span class="comment">% 打字机字体</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\textsc</span>&#123;小型大写字母&#125; <span class="comment">% 小型大写字母</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\textmd</span>&#123;中等大写字母&#125; <span class="comment">% 中等大写字母</span></span><br></pre></td></tr></table></figure>
+<h3 id="数学公式">数学公式</h3>
+<p>LaTex中，数学公式可以分为行内公式和行间公式。</p>
+<p>行内公式以<code>$</code>符号包裹，如<code>$x^2$</code></p>
+<p>行间公式以<code>\[</code>和<code>\]</code>符号包裹，如<code>\[x^2\]</code></p>
+<p>对于复杂的行间公式，可以使用<code>amsmath</code>包中的<code>equation</code>环境。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line">行内公式演示：</span><br><span class="line"></span><br><span class="line">如果<span class="built_in">$</span>x<span class="built_in">^</span>2 + y<span class="built_in">^</span>2 = z<span class="built_in">^</span>2<span class="built_in">$</span>，那么 <span class="built_in">$</span>x = <span class="keyword">\frac</span>&#123;2&#125;&#123;3&#125;<span class="built_in">$</span>  <span class="keyword">\\</span></span><br><span class="line"></span><br><span class="line">如果<span class="built_in">$</span> 1+<span class="keyword">\dfrac</span>&#123;1&#125;&#123;2&#125; = <span class="keyword">\dfrac</span>&#123;3&#125;&#123;4&#125;<span class="built_in">$</span>，那么<span class="built_in">$</span>x = <span class="keyword">\dfrac</span>&#123;2&#125;&#123;3&#125;<span class="built_in">$</span></span><br><span class="line"></span><br><span class="line">行间公式演示：</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation*&#125;</span><br><span class="line">    <span class="keyword">\frac</span>&#123;1&#125;&#123;2&#125; <span class="keyword">\times</span> 3 = 1.5</span><br><span class="line"><span class="keyword">\end</span>&#123;equation*&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">    <span class="keyword">\int</span><span class="built_in">_</span>&#123;0&#125;<span class="built_in">^</span>&#123;1&#125; x<span class="built_in">^</span>2 dx = <span class="keyword">\frac</span>&#123;1&#125;&#123;3&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;</span><br><span class="line">    <span class="keyword">\sum</span><span class="built_in">_</span>&#123;i=1&#125;<span class="built_in">^</span>&#123;n&#125; i = <span class="keyword">\frac</span>&#123;n(n+1)&#125;&#123;2&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>插入行间公式时，如果用<code>equation</code>环境，那么公式会自动编号，如果用<code>equation*</code>环境，那么公式不会自动编号。而如果用<code>\[]\</code>包裹的形式，也不会自动编号<br>
+如果想对公式字母加粗，可以用<code>\bm&#123;需要加粗的字母&#125;</code>方法，注意引入<code>bm</code>包</p>
+</blockquote>
+<p>对于复杂的LeTeX公式代码建议利用<a href="ttps://www.latexlive.com/">LaTex公式编辑网站</a>中创建</p>
+<h3 id="插入图片">插入图片</h3>
+<p>请将需要插入的图片放入你的<code>.tex</code>文件所在目录中（可以是有文件夹的子目录）</p>
+<p>插入单图</p>
+<p>使用环境<code>\begin&#123;figure&#125;</code>和<code>\end&#123;figure&#125;</code>包裹图片</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;[h] </span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\includegraphics</span>[width=0.6<span class="keyword">\textwidth</span>]&#123;your<span class="built_in">_</span>pic<span class="built_in">_</span>dir&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;图片标题&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<p>需要关注的参数：</p>
+<ul>
+<li><code>h</code>：代表自动调整位置</li>
+<li><code>\center</code>:表示图片居中</li>
+<li><code>width=0.6\textwidth</code>：代表图片宽度为页面宽度的60%</li>
+<li><code>your_pic_dir</code>：代表你的图片相对.lex文件的相对路径（如你有一张图片pic.png在与.tex文件同目录下，则可以填pic.png）</li>
+</ul>
+<p>插入双图</p>
+<p>先使用环境<code>\begin&#123;figure&#125;</code>和<code>\end&#123;figure&#125;</code>包裹双图图片，再使用环境<code>\begin&#123;minipage&#125;</code>和<code>\end&#123;minipage&#125;</code>包裹每张图片</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;figure&#125;[h]</span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;&#123;0.48<span class="keyword">\textwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=0.9<span class="keyword">\textwidth</span>]&#123;your<span class="built_in">_</span>pic1<span class="built_in">_</span>dir&#125;</span><br><span class="line">        <span class="keyword">\caption</span>&#123;图片1&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line">    <span class="keyword">\begin</span>&#123;minipage&#125;&#123;0.48<span class="keyword">\textwidth</span>&#125;</span><br><span class="line">        <span class="keyword">\centering</span></span><br><span class="line">        <span class="keyword">\includegraphics</span>[width=0.9<span class="keyword">\textwidth</span>]&#123;your<span class="built_in">_</span>pic2<span class="built_in">_</span>dir&#125;</span><br><span class="line">        <span class="keyword">\caption</span>&#123;图片2&#125;</span><br><span class="line">    <span class="keyword">\end</span>&#123;minipage&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;figure&#125;</span><br></pre></td></tr></table></figure>
+<p>需要关注的参数：</p>
+<ul>
+<li><code>h</code>：代表自动调整位置</li>
+<li><code>\centering</code>表示图片居中</li>
+<li><code>0.48\textwidth</code>：代表创建一个宽度为页面宽度的48%的容器</li>
+<li><code>width=0.9\textwidth</code>：代表图片宽度为容器宽度的90%</li>
+<li><code>your_pic1_dir</code>：代表你的第一张图片相对.lex文件的相对路径</li>
+<li><code>your_pic2_dir</code>：代表你的第二张图片相对.lex文件的相对路径</li>
+</ul>
+<blockquote>
+<p>调整宽度时不要让你的两张图相互重叠了</p>
+</blockquote>
+<h3 id="插入表格">插入表格</h3>
+<p>使用环境<code>\begin&#123;table&#125;</code>和<code>\end&#123;table&#125;</code>包裹表格</p>
+<p>使用<code>\centering</code> 设置表格居中</p>
+<p>使用环境<code>\begin&#123;tabular&#125;</code>和<code>\end&#123;tabular&#125;</code>包裹具体的表格内容</p>
+<p>使用<code>\caption&#123;title&#125;</code>设置表格标题</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line">普通表格示例：</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[h]</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;tabular&#125;&#123;|c|c|c|&#125;</span><br><span class="line">        <span class="keyword">\hline</span></span><br><span class="line">        姓名 <span class="built_in">&amp;</span> 年龄 <span class="built_in">&amp;</span> 性别 <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\hline</span></span><br><span class="line">        张三 <span class="built_in">&amp;</span> 20 <span class="built_in">&amp;</span> 男  <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\hline</span></span><br><span class="line">        李四 <span class="built_in">&amp;</span> 22 <span class="built_in">&amp;</span> 女  <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\hline</span></span><br><span class="line">    <span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;表格标题&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br><span class="line"></span><br><span class="line">三线表示例：</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[h]</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;tabular&#125;&#123;cc&#125;</span><br><span class="line">        <span class="keyword">\toprule</span></span><br><span class="line">        <span class="keyword">\qquad</span> 物理符号 <span class="keyword">\qquad</span> <span class="built_in">&amp;</span> <span class="keyword">\qquad</span> 物理含义 <span class="keyword">\qquad</span> <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\midrule</span></span><br><span class="line">        I                  <span class="built_in">&amp;</span> 电流                 <span class="keyword">\\</span></span><br><span class="line">        U                  <span class="built_in">&amp;</span> 电压                 <span class="keyword">\\</span></span><br><span class="line">        <span class="keyword">\bottomrule</span></span><br><span class="line">    <span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;表格标题&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br></pre></td></tr></table></figure>
+<p>绘制普通表格关注的参数：</p>
+<ul>
+<li><code>|c|c|c|</code>:c是占位符，c的个数决定了表的列数，同时c也意味着文件居中。<code>l</code> ：居左；<code>r</code>：居右</li>
+<li><code>\hline</code> ：在当前行上方绘制一条横线</li>
+<li><code>&amp;</code>：分隔单元格</li>
+<li><code>\\</code>：分隔行</li>
+</ul>
+<p>绘制三线表关注的参数：</p>
+<ul>
+<li><code>\toprule</code> ：顶部横线</li>
+<li><code>\midrule</code> ：中部横线</li>
+<li><code>\bottomrule</code> ：底部横线</li>
+<li><code>&amp;</code>：分隔单元格</li>
+<li><code>\\</code>：分隔行</li>
+</ul>
+<blockquote>
+<p>表格每列最大宽度是由最宽的单元格决定的，因此直接插入表格可能会显得非常小，一个便捷的方法是手动加入空格<code>\qquad</code> 然后手动调整居中（如上方三线图示例）。</p>
+</blockquote>
+<p>事实上，在了解完表格的基础后，我们并不需要手动建表并调整格式，可以通过<a target="_blank" rel="noopener" href="https://www.tablesgenerator.com/">在线表格创建网站</a>快速编辑所需表格。如果使用了合并单元格等，注意网站给出添加有关包的提示。</p>
+<p>如果你只是想创建简单的表格，或许这个<a target="_blank" rel="noopener" href="https://tableconvert.com/zh-cn/latex-generator">在线表格创建网站</a>使用起来更方便。</p>
+<h3 id="插入代码">插入代码</h3>
+<p>首先添加包 <code>listings</code></p>
+<p>使用环境<code>\begin&#123;lstlisting&#125;</code>和<code>\end&#123;lstlisting&#125;</code>包裹代码</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\usepackage</span>&#123;listings&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;lstlisting&#125;[language=C++]</span><br><span class="line"><span class="params">#</span>include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int main() &#123;</span><br><span class="line">    std::cout &lt;&lt; &quot;Hello, world!&quot; &lt;&lt; std::endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;lstlisting&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;lstlisting&#125;&#123;language=python&#125;</span><br><span class="line"></span><br><span class="line">print(&quot;Hello, world!&quot;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">\end</span>&#123;lstlisting&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>需要关注的参数：</p>
+<ul>
+<li><code>language=C++</code>：代表代码语言为C++</li>
+</ul>
+<h3 id="标签">标签</h3>
+<p>为了能在文章快速引用公式、图片、表格、章节等，可以使用标签。</p>
+<p>同时标签能够避免手动标号产生修改麻烦的问题。</p>
+<p>使用<code>\label&#123;label_name&#125;</code>设置标签</p>
+<p>使用<code>\ref&#123;label_name&#125;</code>引用标签</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\begin</span>&#123;equation&#125;<span class="keyword">\label</span>&#123;eq:1&#125;</span><br><span class="line">    <span class="keyword">\frac</span>&#123;1&#125;&#123;2&#125; = 0.5</span><br><span class="line"><span class="keyword">\end</span>&#123;equation&#125;</span><br><span class="line"></span><br><span class="line">公式<span class="keyword">\ref</span>&#123;eq:1&#125;的值是0.5</span><br><span class="line"></span><br><span class="line"><span class="keyword">\begin</span>&#123;table&#125;[h]<span class="keyword">\label</span>&#123;tab:my<span class="built_in">_</span>label&#125;</span><br><span class="line">    <span class="keyword">\centering</span></span><br><span class="line">    <span class="keyword">\begin</span>&#123;tabular&#125;&#123;|c|c|&#125;</span><br><span class="line">    <span class="keyword">\hline</span></span><br><span class="line">       a  <span class="built_in">&amp;</span> b <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\hline</span></span><br><span class="line">        c <span class="built_in">&amp;</span> d <span class="keyword">\\</span></span><br><span class="line">    <span class="keyword">\hline</span></span><br><span class="line">    <span class="keyword">\end</span>&#123;tabular&#125;</span><br><span class="line">    <span class="keyword">\caption</span>&#123;my<span class="built_in">_</span>label&#125;</span><br><span class="line"><span class="keyword">\end</span>&#123;table&#125;</span><br><span class="line"></span><br><span class="line">表格<span class="keyword">\ref</span>&#123;tab:my<span class="built_in">_</span>label&#125;是一个普通表格</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>标签建议写在环境开始<code>\begin&#123;&#125;</code>前。</p>
+<p>标签的命名建议：公式：<code>eq:eq_name</code>图片：<code>pic:pic_name</code>表格：<code>tab:tab_name</code>章节：<code>sec:sec_name</code>。</p>
+</blockquote>
+<h3 id="参考文献">参考文献</h3>
+<p>参考文献可以选择使用BibTex，也可以选择不使用。为了参考文献管理方便，建议选择使用BibTex。</p>
+<p><em>Step1：</em><br>
+使用BibTex需要添加包<code>biblatex</code>。</p>
+<p><em>Step2：</em><br>
+在.tex文件下建立一个BibTex文件，即<code>.bib</code>文件，例如<code>my_bib.bib</code>。</p>
+<p><em>Step3：</em><br>
+在BibTex文件中添加参考文献，例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">@article&#123;name1,</span><br><span class="line">author = &#123;作者, 多个作者用 and 连接&#125;,</span><br><span class="line">title = &#123;标题&#125;,</span><br><span class="line">journal = &#123;期刊名&#125;,</span><br><span class="line">volume = &#123;卷20&#125;,</span><br><span class="line">number = &#123;页码&#125;,</span><br><span class="line">year = &#123;年份&#125;,</span><br><span class="line">abstract = &#123;摘要, 这个主要是引用的时候自己参考的, 这一行不是必须的&#125;</span><br><span class="line">&#125;</span><br><span class="line">@book&#123;name2,</span><br><span class="line">author =&quot;作者&quot;,</span><br><span class="line">year=&quot;年份2008&quot;,</span><br><span class="line">title=&quot;书名&quot;,</span><br><span class="line">publisher =&quot;出版社名称&quot;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考文献的类型由@后面的参数决定，常见有：</p>
+<ul>
+<li><code>article</code>：文章</li>
+<li><code>book</code>：书籍</li>
+<li><code>incollection</code>：书籍中的某一章（</li>
+<li><code>inproceedings</code>：会议论文</li>
+<li><code>report</code>：报告</li>
+<li><code>thesis</code>：学位论文</li>
+<li><code>unpublished</code>：未发表的论文</li>
+<li><code>misc</code>：其他类型</li>
+</ul>
+<p><em>Step4:</em><br>
+在论文最末，<code>\end&#123;document&#125;</code>之前，使用<code>\bibliographystyle&#123;&#125;</code>和<code>\bibliography&#123;&#125;</code>设定参考文献样式和导入数据库。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\bibliographystyle</span>&#123;plain&#125;</span><br><span class="line"><span class="keyword">\bibliography</span>&#123;my<span class="built_in">_</span>bib&#125;</span><br></pre></td></tr></table></figure>
+<p>常见的预设样式的可选项有8种，分别是：</p>
+<ul>
+<li><code>plain</code>：按字母的顺序排列，比较次序为作者、年度和标题；</li>
+<li><code>unsrt</code>：样式同plain，只是按照引用的先后排序；</li>
+<li><code>abbrv</code>：类似plain，将月份全拼改为缩写，更显紧凑；</li>
+<li><code>ieeetr</code>：国际电气电子工程师协会期刊样式；</li>
+<li><code>acm</code>：美国计算机学会期刊样式；</li>
+<li><code>siam</code>：美国工业和应用数学学会期刊样式；</li>
+</ul>
+<p><em>Step5：</em><br>
+在论文中需要引用参考文献的地方使用<code>\cite&#123;name&#125;</code>引用参考文献。</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\documentclass</span>&#123;article&#125;  <span class="comment">%文章类型</span></span><br><span class="line"><span class="keyword">\usepackage</span>&#123;biblatex&#125;   <span class="comment">% 设添加包</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"></span><br><span class="line">I want to cite the paper <span class="keyword">\cite</span>&#123;ref<span class="built_in">_</span>name&#125; <span class="comment">% ref_name为数据库参考文献自定义名</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\bibliographystyle</span>&#123;plain&#125; <span class="comment">% 确定样式</span></span><br><span class="line"><span class="keyword">\bibliography</span>&#123;your<span class="built_in">_</span>bib<span class="built_in">_</span>name&#125; <span class="comment">% 导入数据库</span></span><br></pre></td></tr></table></figure>
+<h2 id="论文模板">论文模板</h2>
+<p>在学习完基础知识后，就可以直接上手模板啦！</p>
+<p>对于论文模板，我们不需要关注他的配置，只需要修改其中内容即可。</p>
+<p>在<code>overleaf</code>中，可以找到很多优秀的模板，包括<a target="_blank" rel="noopener" href="https://www.overleaf.com/latex/templates/quan-guo-da-xue-sheng-shu-xue-jian-mo-jing-sai-lun-wen-mo-ban/gfyqvcbzywcm">全国大学生数学建模竞赛论文模板</a></p>
+<blockquote>
+<p>作者网站：<a target="_blank" rel="noopener" href="https://blog.marquis.eu.org/">https://blog.marquis.eu.org/</a></p>
+</blockquote>
+<p>其中<code>template.tex</code>很好地演示了模板，能够应付绝大多数数模论文需求。在学习完基础知识后，看懂模板示例代码应该不难，其中的自定义命令也比较好理解，这里就不过多讲解了。</p>
+<p>为了方便本地编写全国大学生数学建模竞赛论文，我将论文下载到本地，并打包到自己的<a target="_blank" rel="noopener" href="https://github.com/Hoyinl2333/Mathematical-Modeling-Contest-Essay-Template">github仓库</a>中。如有侵权，请联系我删除。</p>
+<h2 id="结语">结语</h2>
+<p>文中大部分内容学习自<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1gv421k7FF?p=1&amp;vd_source=8ed6fcea5116ab41dde777f88e58afa1">LaTeX快速上手与数学建模论文写作</a></p>
+<p>通过简单的LaTeX学习，终于已经能够写出自己的数学建模论文了！对于有markdown基础的同学，学习LaTeX应该会比较快。</p>
+<p>既然你已经学会了LaTeX的基础知识，现在就快去写一篇数模国赛论文吧！23333</p>
+<p>这篇博客仅记录一下自己的学习心得，希望能对你有所帮助。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://www.hoblog.top">Hoyinl</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://www.hoblog.top/2024/07/01/LaTeX/LaTeX_learn/">https://www.hoblog.top/2024/07/01/LaTeX/LaTeX_learn/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/LaTex/">LaTex</a><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></div><div class="post_share"><div class="social-share" data-image="/images/PID_48285353.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2024/06/30/accounting/chapter10/" title="会计学原理复习笔记（九）| 第十章 负债"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-30</div><div class="title">会计学原理复习笔记（九）| 第十章 负债</div></div></a></div><div><a href="/2024/06/30/accounting/README/" title="会计学原理复习笔记（一）| 前言"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-30</div><div class="title">会计学原理复习笔记（一）| 前言</div></div></a></div><div><a href="/2024/06/30/accounting/chapter3/" title="会计学原理复习笔记（二）| 第三章 收入和货币性质资产"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-30</div><div class="title">会计学原理复习笔记（二）| 第三章 收入和货币性质资产</div></div></a></div></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81OTk1MS8zNjQxNA=="></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Hoyinl</div><div class="author-info__description">所见即我。</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Hoyinl2333" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">Welcome!  博客还有很多尚未完善的地方，还有很多精彩的内容待上传。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B5%B7%E5%9B%A0"><span class="toc-number">1.</span> <span class="toc-text">起因</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%9C%89%E5%85%B3%E7%8E%AF%E5%A2%83"><span class="toc-number">2.</span> <span class="toc-text">配置有关环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%A6%E4%B9%A0%E8%BF%87%E7%A8%8B"><span class="toc-number">3.</span> <span class="toc-text">学习过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="toc-number">3.1.</span> <span class="toc-text">基本语法规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E4%B8%80%E4%B8%AApdf%E6%96%87%E6%A1%A3%E7%9A%84%E5%86%99%E4%BD%9C"><span class="toc-number">3.2.</span> <span class="toc-text">开始一个pdf文档的写作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E5%8C%85%E5%AE%89%E8%A3%85"><span class="toc-number">3.3.</span> <span class="toc-text">相关包安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E8%A8%80%E5%8C%BA"><span class="toc-number">3.4.</span> <span class="toc-text">导言区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.5.</span> <span class="toc-text">设置文章格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E6%A0%87%E9%A2%98%E6%A0%BC%E5%BC%8F"><span class="toc-number">3.6.</span> <span class="toc-text">设置标题格式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E5%86%99%E6%AD%A3%E6%96%87%E5%8C%BA"><span class="toc-number">3.7.</span> <span class="toc-text">编写正文区</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">3.8.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%84%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">3.9.</span> <span class="toc-text">各级标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E4%BD%93"><span class="toc-number">3.10.</span> <span class="toc-text">字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">3.11.</span> <span class="toc-text">数学公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="toc-number">3.12.</span> <span class="toc-text">插入图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E8%A1%A8%E6%A0%BC"><span class="toc-number">3.13.</span> <span class="toc-text">插入表格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E5%85%A5%E4%BB%A3%E7%A0%81"><span class="toc-number">3.14.</span> <span class="toc-text">插入代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%87%E7%AD%BE"><span class="toc-number">3.15.</span> <span class="toc-text">标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">3.16.</span> <span class="toc-text">参考文献</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BA%E6%96%87%E6%A8%A1%E6%9D%BF"><span class="toc-number">4.</span> <span class="toc-text">论文模板</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">5.</span> <span class="toc-text">结语</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/07/01/LaTeX/LaTeX_learn/" title="LaTeX 学习心得"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/PID_48285353.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="LaTeX 学习心得"/></a><div class="content"><a class="title" href="/2024/07/01/LaTeX/LaTeX_learn/" title="LaTeX 学习心得">LaTeX 学习心得</a><time datetime="2024-06-30T16:00:00.000Z" title="Created 2024-07-01 00:00:00">2024-07-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/30/accounting/chapter10/" title="会计学原理复习笔记（九）| 第十章 负债"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="会计学原理复习笔记（九）| 第十章 负债"/></a><div class="content"><a class="title" href="/2024/06/30/accounting/chapter10/" title="会计学原理复习笔记（九）| 第十章 负债">会计学原理复习笔记（九）| 第十章 负债</a><time datetime="2024-06-29T16:00:00.000Z" title="Created 2024-06-30 00:00:00">2024-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/30/accounting/README/" title="会计学原理复习笔记（一）| 前言"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="会计学原理复习笔记（一）| 前言"/></a><div class="content"><a class="title" href="/2024/06/30/accounting/README/" title="会计学原理复习笔记（一）| 前言">会计学原理复习笔记（一）| 前言</a><time datetime="2024-06-29T16:00:00.000Z" title="Created 2024-06-30 00:00:00">2024-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/30/accounting/chapter3/" title="会计学原理复习笔记（二）| 第三章 收入和货币性质资产"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="会计学原理复习笔记（二）| 第三章 收入和货币性质资产"/></a><div class="content"><a class="title" href="/2024/06/30/accounting/chapter3/" title="会计学原理复习笔记（二）| 第三章 收入和货币性质资产">会计学原理复习笔记（二）| 第三章 收入和货币性质资产</a><time datetime="2024-06-29T16:00:00.000Z" title="Created 2024-06-30 00:00:00">2024-06-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/06/30/accounting/chapter4/" title="会计学原理复习笔记（三）| 第四章 存货和销售成本"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/images/pic2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="会计学原理复习笔记（三）| 第四章 存货和销售成本"/></a><div class="content"><a class="title" href="/2024/06/30/accounting/chapter4/" title="会计学原理复习笔记（三）| 第四章 存货和销售成本">会计学原理复习笔记（三）| 第四章 存货和销售成本</a><time datetime="2024-06-29T16:00:00.000Z" title="Created 2024-06-30 00:00:00">2024-06-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By Hoyinl</div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"><script>(()=>{
+  const loadLivere = () => {
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div></body></html>
