@@ -6,15 +6,12 @@
   color: black;
 }
 
-
-
 /* 鼠标样式 */
 body {
   cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/default.cur),
     default;
 }
 
-a,
 img {
   cursor: url(https://cdn.jsdelivr.net/gh/constown/HexoCustomFile/public/cursors/pointer.cur),
     default;
@@ -22,11 +19,39 @@ img {
 
 /* 所有背景（包括首页卡片、文章页、页面页等） */
 /* 以下代表白色透明度为0.85 */
-#aside_content .card-widget,
-#recent-posts>.recent-post-item,
-.layout_page>div:first-child:not(.recent-posts),
-.layout_post>#page,
-.layout_post>#post,
-.read-mode .layout_post>#post {
-  background: rgba(255, 255, 255, .85);
+
+
+
+/* 亮色模式下的背景 */
+[data-theme="light"] #aside_content .card-widget,
+[data-theme="light"] #recent-posts>.recent-post-item,
+[data-theme="light"] .layout_page>div:first-child:not(.recent-posts),
+[data-theme="light"] .layout_post>#page,
+[data-theme="light"] .layout_post>#post,
+[data-theme="light"] .read-mode .layout_post>#post {
+  background: rgba(255, 255, 255, 0.85);
 }
+
+/* 暗色模式下的背景 */
+[data-theme="dark"] #aside_content .card-widget,
+[data-theme="dark"] #recent-posts>.recent-post-item,
+[data-theme="dark"] .layout_page>div:first-child:not(.recent-posts),
+[data-theme="dark"] .layout_post>#page,
+[data-theme="dark"] .layout_post>#post,
+[data-theme="dark"] .read-mode .layout_post>#post {
+  background: rgba(0, 0, 0, 0.85); /* 深色背景，透明度85% */ /*似乎并不能设置成功*/
+}
+
+/*主要是Tags页面的page透明度设置*/
+[data-theme="light"] #page {
+  background: rgba(255, 255, 255, 0.85); /* 白天模式下的背景透明度 */
+}
+
+/*主要是Tags页面的page透明度设置*/
+[data-theme="light"] #archive {
+  background: rgba(255, 255, 255, 0.85); /* 白天模式下的背景透明度 */
+}
+
+
+
+

@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.hoblog.top/archives/index.html</loc>
+    
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.hoblog.top/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/index.html</loc>
     
     <lastmod>2024-07-02</lastmod>
@@ -119,15 +128,6 @@
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/archives/index.html</loc>
-    
-    <lastmod>2024-06-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.hoblog.top/tags/index.html</loc>
     
     <lastmod>2024-06-30</lastmod>
@@ -155,7 +155,7 @@
 
   
   <url>
-    <loc>https://www.hoblog.top/tags/%E4%BC%9A%E8%AE%A1%E5%AD%A6/</loc>
+    <loc>https://www.hoblog.top/tags/LaTex/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -169,14 +169,14 @@
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/tags/%E5%89%8D%E8%A8%80/</loc>
+    <loc>https://www.hoblog.top/tags/%E4%BC%9A%E8%AE%A1%E5%AD%A6/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/tags/LaTex/</loc>
+    <loc>https://www.hoblog.top/tags/%E5%89%8D%E8%A8%80/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -185,14 +185,14 @@
 
   
   <url>
-    <loc>https://www.hoblog.top/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/</loc>
+    <loc>https://www.hoblog.top/categories/LaTeX/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.hoblog.top/categories/LaTeX/</loc>
+    <loc>https://www.hoblog.top/categories/%E4%BC%9A%E8%AE%A1%E5%AD%A6%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
